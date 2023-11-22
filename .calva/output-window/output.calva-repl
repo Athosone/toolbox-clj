@@ -92,3 +92,447 @@ clj꞉athosone.git.gitconfig꞉> 
 clj꞉athosone.git.gitconfig꞉> 
 nil
 clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+#'athosone.git.gitconfig/create-pre-commit-hook
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+"toto"
+clj꞉athosone.git.gitconfig꞉> 
+"toto"
+clj꞉athosone.git.gitconfig꞉> 
+; Execution error (FileNotFoundException) at java.io.FileOutputStream/open0 (FileOutputStream.java:-2).
+; .git/h/prepare-commit-msg (No such file or directory)
+clj꞉athosone.git.gitconfig꞉> 
+; Execution error (FileNotFoundException) at java.io.FileOutputStream/open0 (FileOutputStream.java:-2).
+; .git/h/prepare-commit-msg (No such file or directory)
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+; Execution error (ArityException) at athosone.git.gitconfig/eval8064 (REPL:22).
+; Wrong number of args (2) passed to: athosone.git.gitconfig/create-pre-commit-hook
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+"titi"
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+Co-authored
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+Co-authored
+clj꞉athosone.git.gitconfig꞉> 
+nil
+clj꞉athosone.git.gitconfig꞉> 
+#function[athosone.git.gitconfig/get-co-authors]
+clj꞉athosone.git.gitconfig꞉> 
+"Co-authored by: toto\n"
+clj꞉athosone.git.gitconfig꞉> 
+; Execution error (FileNotFoundException) at athosone.gitlab.pair/eval8147$loading (REPL:1).
+; Could not locate clj_http/client__init.class, clj_http/client.clj or clj_http/client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; 
+; Syntax error compiling at (src/athosone/gitlab/pair.clj:10:18).
+; No such namespace: client
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (FileNotFoundException) at athosone.gitlab.pair/eval8153$loading (REPL:1).
+; Could not locate clj_http/client__init.class, clj_http/client.clj or clj_http/client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+clj꞉athosone.gitlab.pair꞉> 
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/athosone/dev/clj-cli/toolbox-clj ; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.0.0"},cider/cider-nrepl {:mvn/version,"0.28.5"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" ; popd
+; nREPL Connection was closed
+; Using host:port localhost:37275 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at athosone.gitlab.pair/eval6049$loading (REPL:1).
+; Could not locate clj_http/client__init.class, clj_http/client.clj or clj_http/client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+; 
+; Syntax error compiling at (src/athosone/gitlab/pair.clj:10:18).
+; No such namespace: client
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (IllegalStateException) at athosone.gitlab.pair/eval7801 (REPL:17).
+; Attempting to call unbound fn: #'athosone.gitlab.pair/get-users
+clj꞉athosone.gitlab.pair꞉> 
+#'athosone.gitlab.pair/access-token
+clj꞉athosone.gitlab.pair꞉> 
+#'athosone.gitlab.pair/endpoint
+clj꞉athosone.gitlab.pair꞉> 
+#'athosone.gitlab.pair/base-url
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (FileNotFoundException) at athosone.gitlab.pair/eval7805$loading (REPL:1).
+; Could not locate clj_http/client__init.class, clj_http/client.clj or clj_http/client.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+clj꞉athosone.gitlab.pair꞉> 
+; Jacking in...
+; Connecting using "deps.edn" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/athosone/dev/clj-cli/toolbox-clj ; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.0.0"},cider/cider-nrepl {:mvn/version,"0.28.5"}}}' -M -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]" ; popd
+; nREPL Connection was closed
+; Using host:port localhost:39433 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉> 
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (ClassCastException) at cheshire.core/parse-string (core.clj:209).
+; class clojure.lang.PersistentVector cannot be cast to class java.lang.String (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+clj꞉athosone.gitlab.pair꞉> 
+; Syntax error compiling at (src/athosone/gitlab/pair.clj:0:0).
+; Unable to resolve symbol: response in this context
+; 
+; Syntax error reading source at (REPL:11:1).
+; EOF while reading, starting at line 10
+clj꞉athosone.gitlab.pair꞉> 
+; Syntax error reading source at (REPL:10:53).
+; Unmatched delimiter: )
+clj꞉athosone.gitlab.pair꞉> 
+{:cached nil,
+ :request-time 549,
+ :repeatable? false,
+ :protocol-version {:name "HTTP", :major 1, :minor 1},
+ :streaming? true,
+ :http-client
+ #object[org.apache.http.impl.client.InternalHttpClient 0x1a9fec1f "org.apache.http.impl.client.InternalHttpClient@1a9fec1f"],
+ :chunked? true,
+ :cookies
+ {"_cfuvid"
+  {:discard true,
+   :domain "gitlab.com",
+   :path "/",
+   :secure true,
+   :value "dVrI4tdKXvO1BpdRDKakiBCl9SF0lAk2p4O0dTls6s8-1700686187013-0-604800000",
+   :version 0}},
+ :reason-phrase "OK",
+ :headers
+ {"ratelimit-remaining" "1998",
+  "gitlab-sv" "localhost",
+  "ratelimit-resettime" "Wed, 22 Nov 2023 20:50:46 GMT",
+  "referrer-policy" "strict-origin-when-cross-origin",
+  "Server" "cloudflare",
+  "ratelimit-limit" "2000",
+  "Content-Type" "application/json",
+  "x-content-type-options" "nosniff",
+  "x-runtime" "0.334901",
+  "gitlab-lb" "haproxy-main-18-lb-gprd",
+  "ratelimit-observed" "2",
+  "x-frame-options" "SAMEORIGIN",
+  "strict-transport-security" "max-age=31536000",
+  "ratelimit-reset" "1700686246",
+  "NEL" "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "Connection" "close",
+  "x-next-page" "2",
+  "Transfer-Encoding" "chunked",
+  "etag" "W/\"4b5534fbeec6186c81e7611194505b68\"",
+  "link"
+  "<https://gitlab.com/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_external=false&exclude_internal=false&external=false&order_by=id&page=2&per_page=20&skip_ldap=false&sort=desc&with_custom_attributes=false&without_project_bots=false&without_projects=false>; rel=\"next\", <https://gitlab.com/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_external=false&exclude_internal=false&external=false&order_by=id&page=1&per_page=20&skip_ldap=false&sort=desc&with_custom_attributes=false&without_project_bots=false&without_projects=false>; rel=\"first\"",
+  "CF-Cache-Status" "MISS",
+  "CF-RAY" "82a40a79afda7397-MRS",
+  "Date" "Wed, 22 Nov 2023 20:49:47 GMT",
+  "vary" "Origin, Accept-Encoding",
+  "x-page" "1",
+  "x-gitlab-meta" "{\"correlation_id\":\"9773e2c419ddbed62314d47d7dbe53da\",\"version\":\"1\"}",
+  "x-request-id" "9773e2c419ddbed62314d47d7dbe53da",
+  "x-per-page" "20",
+  "Report-To"
+  "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MA%2F5G9gULxQoUQCPoQUJqADGF7YgXP8LRM7QjUFjWmYoLWICrSt8gTucVqJwxeIABIJiwTiCjwBNp%2FGx85xfPGxcg15yFoSUq10Qvz%2Bd9wKB%2BRqZ35mF5jlzlHE%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "content-security-policy" "default-src 'none'",
+  "cache-control" "max-age=0, private, must-revalidate",
+  "x-prev-page" ""},
+ :orig-content-encoding "gzip",
+ :status 200,
+ :length -1,
+ :body
+ [{:id 19114538,
+   :username "project_46102349_bot_534c78b0e271fa0fbfb2b5aba61a8a0f",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/b3834b4478a809e41fadc1d7f3f5f744?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_46102349_bot_534c78b0e271fa0fbfb2b5aba61a8a0f"}
+  {:id 19114537,
+   :username "project_50764442_bot_77b91a6e0e8ed7f71e550895cc0254dc",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/e4a46b0af6e41eddc474f4ec6956c250?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_50764442_bot_77b91a6e0e8ed7f71e550895cc0254dc"}
+  {:id 19114536,
+   :username "project_23671738_bot_da4abea975b95fbd33aae53fd0ea44ca",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/bb1d67adab4ccbced54fe88091ae2991?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_23671738_bot_da4abea975b95fbd33aae53fd0ea44ca"}
+  {:id 19114535,
+   :username "project_45513744_bot_e016013bded0eee65bfd44b94a3033a3",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/f2e68eacea495953f3c5018aa43d1b72?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_45513744_bot_e016013bded0eee65bfd44b94a3033a3"}
+  {:id 19114534,
+   :username "project_40142407_bot_c119b8d4124944bd19b5313dab69210b",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/ec4e59a10b0e4882b5d61be9d33a299e?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_40142407_bot_c119b8d4124944bd19b5313dab69210b"}
+  {:id 19114533,
+   :username "kjpwlsvlf",
+   :name "Jin Pil Kim",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/f69159f3578ca4e144583ab15644ec8a?s=80&d=identicon",
+   :web_url "https://gitlab.com/kjpwlsvlf"}
+  {:id 19114532,
+   :username "Wgwjjcc",
+   :name "Gaha Agajc",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/85acf627d6ec25a411e294c1e5d216dc?s=80&d=identicon",
+   :web_url "https://gitlab.com/Wgwjjcc"}
+  {:id 19114531,
+   :username "project_43165188_bot_a93ec92ac68c2964fc0c3f8e253214ad",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/f64e156403c837c1b138c3284c556f0b?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_43165188_bot_a93ec92ac68c2964fc0c3f8e253214ad"}
+  {:id 19114530,
+   :username "project_41984081_bot_9b0c367305ab7ef3f22f593d3a857714",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/aab10acb198463251bc7f453c3c03874?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_41984081_bot_9b0c367305ab7ef3f22f593d3a857714"}
+  {:id 19114529,
+   :username "project_41981316_bot_6ef055ceb8949cdb5a41c1446754190c",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/7827c622c1b137acbceb1108bc814e25?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_41981316_bot_6ef055ceb8949cdb5a41c1446754190c"}
+  {:id 19114528,
+   :username "gitlab_security_policy_project_52435119_bot_3a29ba212ea32ef4832bcab872c11cc9",
+   :name "GitLab Security Policy Bot",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/810e83c4b5b287b6b9319c6a14c89b5d?s=80&d=identicon",
+   :web_url "https://gitlab.com/gitlab_security_policy_project_52435119_bot_3a29ba212ea32ef4832bcab872c11cc9"}
+  {:id 19114527,
+   :username "project_34817071_bot_f53417c016507f046d7bcaaf5b98160c",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/5cb598f31884cd42ab35fe93f4e10c91?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_34817071_bot_f53417c016507f046d7bcaaf5b98160c"}
+  {:id 19114526,
+   :username "gitlab_security_policy_project_52435114_bot_bfa146cfc87dc67d4828dc0ddc245ba4",
+   :name "GitLab Security Policy Bot",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/1771d7c48b2c49d8a16e9fb5d5997ad4?s=80&d=identicon",
+   :web_url "https://gitlab.com/gitlab_security_policy_project_52435114_bot_bfa146cfc87dc67d4828dc0ddc245ba4"}
+  {:id 19114525,
+   :username "project_37187786_bot_7cbea73ab208aa3debae2a46997ec07d",
+   :name "****",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/7706909ea2b40b10e3f00e559836296d?s=80&d=identicon",
+   :web_url "https://gitlab.com/project_37187786_bot_7cbea73ab208aa3debae2a46997ec07d"}
+  {:id 19114524,
+   :username "rianovviacheslav",
+   :name "Viacheslav Rianov",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/830d5da2e218a510b41398033cc915c6?s=80&d=identicon",
+   :web_url "https://gitlab.com/rianovviacheslav"}
+  {:id 19114523,
+   :username "gitlab_security_policy_project_52435074_bot_e39240ddf58e7b7d3225dcabd4137458",
+   :name "GitLab Security Policy Bot",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/9cbfae5a7bf8208d2dc0850383329bbb?s=80&d=identicon",
+   :web_url "https://gitlab.com/gitlab_security_policy_project_52435074_bot_e39240ddf58e7b7d3225dcabd4137458"}
+  {:id 19114522,
+   :username "gitlab_security_policy_project_52435064_bot_37a20aa0b3892db746ec3b781af569f4",
+   :name "GitLab Security Policy Bot",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/1726d5fc81401bfa3974c5f9e6763b28?s=80&d=identicon",
+   :web_url "https://gitlab.com/gitlab_security_policy_project_52435064_bot_37a20aa0b3892db746ec3b781af569f4"}
+  {:id 19114521,
+   :username "gitlab_security_policy_project_52435035_bot_f2e207d40eec892ea697c03b0ced1244",
+   :name "GitLab Security Policy Bot",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/ee2ca524c9dd0f22d57ce9eacf13ecd8?s=80&d=identicon",
+   :web_url "https://gitlab.com/gitlab_security_policy_project_52435035_bot_f2e207d40eec892ea697c03b0ced1244"}
+  {:id 19114520,
+   :username "gitlab_security_policy_project_52435029_bot_2c542068a5fafb2506b8b80714deec8e",
+   :name "GitLab Security Policy Bot",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/926f18f7e5b39038d5fb2e09f505b508?s=80&d=identicon",
+   :web_url "https://gitlab.com/gitlab_security_policy_project_52435029_bot_2c542068a5fafb2506b8b80714deec8e"}
+  {:id 19114519,
+   :username "gitlab_security_policy_project_52435006_bot_553662c7f5a4df4eb8c89e73fc60b0d7",
+   :name "GitLab Security Policy Bot",
+   :state "active",
+   :locked false,
+   :avatar_url "https://secure.gravatar.com/avatar/dae8f9e413776fba648f509409fede69?s=80&d=identicon",
+   :web_url "https://gitlab.com/gitlab_security_policy_project_52435006_bot_553662c7f5a4df4eb8c89e73fc60b0d7"}],
+ :trace-redirects [],
+ :links
+ {:next
+  {:href
+   "https://gitlab.com/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_external=false&exclude_internal=false&external=false&order_by=id&page=2&per_page=20&skip_ldap=false&sort=desc&with_custom_attributes=false&without_project_bots=false&without_projects=false"},
+  :first
+  {:href
+   "https://gitlab.com/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_external=false&exclude_internal=false&external=false&order_by=id&page=1&per_page=20&skip_ldap=false&sort=desc&with_custom_attributes=false&without_project_bots=false&without_projects=false"}}}
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+(def user "athosone")
+clj꞉athosone.gitlab.pair꞉> 
+; Syntax error compiling at (src/athosone/gitlab/pair.clj:11:30).
+; Unable to resolve symbol: user in this context
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (ArityException) at athosone.gitlab.pair/eval10977 (REPL:17).
+; Wrong number of args (1) passed to: athosone.gitlab.pair/search-users
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (ClassCastException) at cheshire.core/parse-string (core.clj:209).
+; class clojure.lang.PersistentVector cannot be cast to class java.lang.String (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (ClassCastException) at cheshire.core/parse-string (core.clj:209).
+; class clojure.lang.PersistentVector cannot be cast to class java.lang.String (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.lang.String is in module java.base of loader 'bootstrap')
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+[{:id 252880, :username "Athosone", :name "WERCK Ayrton", :state "active", :locked false, :avatar_url "https://secure.gravatar.com/avatar/d01bd606af228213aaef4d681caa601a?s=80&d=identicon", :web_url "https://gitlab.com/Athosone"}]
+nil
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (ClassCastException) at cheshire.core/parsed-seq (core.clj:333).
+; class clojure.lang.PersistentVector cannot be cast to class java.io.Reader (clojure.lang.PersistentVector is in unnamed module of loader 'app'; java.io.Reader is in module java.base of loader 'bootstrap')
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+"athosone"
+clj꞉athosone.gitlab.pair꞉> 
+"Athosone"
+clj꞉athosone.gitlab.pair꞉> 
+"Athos"
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+("Athos"
+ "Ribeiro"
+ "athosvk"
+ "AthosSouza"
+ "BergerGER"
+ "athoscouto"
+ "athosmrodrigues"
+ "Athoswhite"
+ "athos_camargo"
+ "jpnos26"
+ "athoshica"
+ "arafathossain78449"
+ "Aathoss"
+ "SAbolfazlSH"
+ "livathos"
+ "Bruno_Agathos"
+ "Pathos3"
+ "nathos"
+ "AnathosN"
+ "Comradeathos17")
+clj꞉athosone.gitlab.pair꞉> 
+()
+clj꞉athosone.gitlab.pair꞉> 
+; Syntax error compiling at (src/athosone/gitlab/pair.clj:7:25).
+; No such namespace: io
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (IllegalArgumentException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; Cannot open <nil> as a Reader.
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (IllegalArgumentException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; Cannot open <nil> as a Reader.
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (IllegalArgumentException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; Cannot open <nil> as a Reader.
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (IllegalArgumentException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; Cannot open <nil> as a Reader.
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; ../config.edn (No such file or directory)
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; ../../config.edn (No such file or directory)
+clj꞉athosone.gitlab.pair꞉> 
+; Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
+; ../../../config.edn (No such file or directory)
+clj꞉athosone.gitlab.pair꞉> 
+#'athosone.gitlab.pair/config
+clj꞉athosone.gitlab.pair꞉> 
+#'athosone.gitlab.pair/access-token
+clj꞉athosone.gitlab.pair꞉> 
+#'athosone.gitlab.pair/access-token
+clj꞉athosone.gitlab.pair꞉> 
+()
+clj꞉athosone.gitlab.pair꞉> 
+nil
+clj꞉athosone.gitlab.pair꞉> 
+("Athosone")
+clj꞉athosone.gitlab.pair꞉> 
