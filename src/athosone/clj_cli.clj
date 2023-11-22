@@ -13,3 +13,8 @@
   (generate-password 10))
 
 (-main)
+
+(comment 
+  ;; (main gitlab pair ...)
+  ;; (main gitlab pr ...)
+  )
