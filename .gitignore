@@ -14,3 +14,7 @@ pom.xml.asc
 .cpcache/
 .env
 config.edn
+.calva
+.clj-kondo
+.lsp
+.cpcache

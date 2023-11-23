@@ -1,1 +1,0 @@
-["^ ","~$greet",["^ ","~:row",5,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$athosone.clj-cli","~:top-ns","^7","~:type","~:fn"],"~$-main",["^ ","^1",10,"^2",1,"~:varargs-min-arity",0,"^5","^;","^6","^7","^8","^7","^9","^:"],"~:filename","/home/athosone/dev/clj-cli/toolbox-clj/src/athosone/clj_cli.clj"]
