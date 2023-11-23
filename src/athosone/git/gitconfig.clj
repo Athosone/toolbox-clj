@@ -11,6 +11,7 @@
     (slurp co-authors-file)))
 
 
+; Todo set file as executable if not already
 (defn replace-co-authors [authors]
   (spit co-authors-file (reduce #(str %1 "Co-authored by: " %2 "\n") "" authors)))
 
