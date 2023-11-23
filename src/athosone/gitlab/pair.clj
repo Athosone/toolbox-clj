@@ -14,6 +14,11 @@
                               :as :json})]
     (map #(:username %1) (:body response))))
 
+(defn pair [users]
+  )
+
 (comment
   (search-user "athosone")
   ())
+
+; TODO check for login gitlab interactively or even forgerock
