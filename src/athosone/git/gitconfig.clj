@@ -13,7 +13,9 @@
 
 ; Todo set file as executable if not already
 (defn replace-co-authors [authors]
-  (spit co-authors-file (reduce #(str %1 "Co-authored by: " %2 "\n") "" authors)))
+  (let [authors (vec authors)]
+    (prn (str "Replacing co-authors with " authors))
+    (spit co-authors-file (reduce #(str %1 "Co-authored by: " %2 "\n") "" authors))))
 
 (comment
   (get-co-authors)

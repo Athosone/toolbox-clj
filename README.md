@@ -1,6 +1,15 @@
 # clj-cli
 
 FIXME: my new application.
+## UI Ideas
+
+https://clojurebridgelondon.github.io/workshop/introducing-clojure/rich-terminals.html
+
+https://multimud.github.io/clojure-lanterna/4-reference
+
+Raw method using go:
+
+https://medium.com/@nexidian/writing-an-interactive-cli-menu-in-golang-d6438b175fb6
 
 ## Installation
 
@@ -20,7 +29,7 @@ Run the project, overriding the name to be greeted:
     $ clojure -X:run-x :name '"Someone"'
     Hello, Someone!
 
-Run the project directly, via `:main-opts` (`-m athosone.clj-cli`):
+Run the project directly, via `:main-opts` (`-m athosone.toolbox`):
 
     $ clojure -M:run-m
     Hello, World!

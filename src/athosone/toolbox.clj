@@ -1,4 +1,4 @@
-(ns athosone.clj-cli
+(ns athosone.toolbox
   (:require [athosone.gitlab.pair :as gitlab]
             [cli-matic.core :refer [run-cmd]])
   (:gen-class))
@@ -25,10 +25,11 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
+  (println "Hello, World!")
   (run-cmd args CONFIGURATION))
 
 
 (comment
   ;; (main gitlab pair ...)
   ;; (main gitlab pr ...)
-  (-main "gitlab" "pair" "-u" "athosone,athosone2"))
+  (-main "gitlab" "pair" "-u" "athosone,athosone3"))
