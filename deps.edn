@@ -1,8 +1,10 @@
 {:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "1.11.1"}
-        org.clojure/tools.cli {:mvn/version "1.0.219"}
-        cheshire/cheshire {:mvn/version "5.12.0"}
-        clj-http/clj-http {:mvn/version "3.12.3"}}
+ :deps
+ {org.clojure/clojure {:mvn/version "1.11.1"}
+  org.clojure/tools.cli {:mvn/version "1.0.219"}
+  cheshire/cheshire {:mvn/version "5.12.0"}
+  clj-http/clj-http {:mvn/version "3.12.3"}
+  cli-matic/cli-matic {:mvn/version "0.5.4"}}
  :aliases
  {:run-m {:main-opts ["-m" "athosone.clj-cli"]}
   :run-x {:ns-default athosone.clj-cli
