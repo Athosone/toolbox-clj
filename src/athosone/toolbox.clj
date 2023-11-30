@@ -32,4 +32,4 @@
 (comment
   ;; (main gitlab pair ...)
   ;; (main gitlab pr ...)
-  (-main "gitlab" "pair" "-u" "athosone,athosone3"))
+  (main "gitlab" "pair" "-u" "athosone,athosone3"))
