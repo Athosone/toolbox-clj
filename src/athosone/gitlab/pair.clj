@@ -22,7 +22,7 @@
     (when (empty? potential-users)
       (throw (ex-info (str "User " user " not found") {})))
     ; Ask for user selection
-    ))
+    potential-users))
 
 (defn pair [comma-sep-users]
   (when (empty? comma-sep-users)
@@ -32,11 +32,11 @@
     (gitconfig/replace-co-authors selected-users)))
 
 (comment
-  (search-user "athosone")
+  (search-user "ayrton")
   (pair "")
   (pair "ayrton")
   (str/split "athosone,athosone2" #",")
-  (refine-user "F297242")
+  (refine-user "athos,a")
 
   ())
 
