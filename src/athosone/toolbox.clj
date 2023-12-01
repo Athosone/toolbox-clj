@@ -23,13 +23,12 @@
 
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!")
+  ;; (println (str "Hello " args))
   (run-cmd args CONFIGURATION))
 
 
 (comment
   ;; (main gitlab pair ...)
   ;; (main gitlab pr ...)
-  (main "gitlab" "pair" "-u" "athosone,athosone3"))
+  (-main "pair" "-u" "athosone,athosone3"))

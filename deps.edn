@@ -8,8 +8,8 @@
  :aliases
  {:run-m {:main-opts ["-m" "athosone.toolbox"]}
   :run-x {:ns-default athosone.toolbox
-          :exec-fn greet
-          :exec-args {:name "Clojure"}}
+          :exec-fn -main
+          :exec-args {:args "help"}}
   :build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.4"}}
           :ns-default build}
   :test {:extra-paths ["test"]
