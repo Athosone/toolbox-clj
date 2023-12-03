@@ -2,24 +2,32 @@
   (:require [athosone.gitlab.pair :as gitlab]
             [cli-matic.core :refer [run-cmd]])
   (:gen-class))
-
+;; https://github.com/l3nz/cli-matic
 (def CONFIGURATION
-  {:command "gitlab"
-   :description "Gitlab CLI"
+  {:command "toolbox"
+   :description "A collection of tools"
    :version "0.1.0"
-   :opts [{:as "Gitlab personal token"
-           :default ""
-           :type :string
-           :option "token"
-           :short "t"}]
-   :subcommands [{:command "pair"
-                  :description "Pair with a gitlab user, will add as Co-Author to commits"
-                  :opts [{:as "Gitlab users (comma separated)"
-                          :default ""
+   :subcommands [{:command "gitlab"
+                  :description "Gitlab CLI"
+                  :version "0.1.0"
+                  :opts [{:as "Gitlab personal token"
+                          ;; Default from env var
+                          :default "toto";;(System/getenv "GITLAB_PERSONAL_ACCESS_TOKEN")
                           :type :string
-                          :option "users"
-                          :short "u"}]
-                  :runs gitlab/pair}]})
+                          :option "token"
+                          :short "t"}
+                         {:as "Gitlab API URL"
+                          :default "https://gitlab.com/api/v4"
+                          :type :string
+                          :option "url"}]
+                  :subcommands [{:command "pair"
+                                 :description "Pair with a gitlab user, will add as Co-Author to commits"
+                                 :opts [{:as "Gitlab users (comma separated)"
+                                         :default ""
+                                         :type :string
+                                         :option "users"
+                                         :short "u"}]
+                                 :runs gitlab/pair}]}]})
 
 
 (defn -main
@@ -30,5 +38,6 @@
 
 (comment
   ;; (main gitlab pair ...)
-  ;; (main gitlab pr ...)
-  (-main "pair" "-u" "athosone,athosone3"))
+  (-main "--help")
+  (-main "gitlab" "pair" "-u" "aaa,bbb")
+  ())
