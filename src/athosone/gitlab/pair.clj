@@ -18,24 +18,27 @@
     (map #(:username %1) (:body response))))
 
 (defn refine-user [user]
-  (let [potential-users (search-user user)]
+  (let [potential-users (vec (search-user user))]
     (when (empty? potential-users)
       (throw (ex-info (str "User " user " not found") {})))
     ; Ask for user selection
-    potential-users))
+    (prn (str "Select user: " potential-users))
+    (let [selected-user (read-line)]
+      selected-user)))
 
 (defn pair [comma-sep-users]
   (when (empty? comma-sep-users)
     (throw (ex-info "No users provided" {})))
-  (let [users (str/split comma-sep-users #",")
-        selected-users (map #(refine-user %1) users)]
-    (gitconfig/replace-co-authors selected-users)))
+  (let [users (str/split comma-sep-users #",")]
+    (gitconfig/replace-co-authors (map #(refine-user %1) users))))
 
 (comment
   (search-user "ayrton")
   (pair "")
-  (pair "ayrton")
+  (pair "ayrton werck,michel")
+  (pair "werck")
   (str/split "athosone,athosone2" #",")
+  (str/split "athosone2" #",")
   (refine-user "athos,a")
 
   ())
