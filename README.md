@@ -1,5 +1,11 @@
 # clj-cli
 
+To run the app:
+
+```bash
+clojure -m athosone.toolbox gitlab pair -u athosone
+```
+
 FIXME: my new application.
 ## UI Ideas
 

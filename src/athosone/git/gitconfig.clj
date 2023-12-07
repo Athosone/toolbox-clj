@@ -23,9 +23,10 @@
     (string? authors) (format-authors (s/split authors #","))))
 
 (defn replace-co-authors [authors]
-  (prn (str "Replacing co-authors with " authors))
-  (spit co-authors-file (generate-co-authors authors)))
-    ;; (spit co-authors-file (reduce #(str %1 "Co-authored by: " %2 "\n") "" authors))))
+  (prn (str "Replacing co-authors with " (s/join "," authors)))
+  (spit co-authors-file (generate-co-authors authors))
+  (when (not (.canExecute (io/file co-authors-file)))
+    (.setExecutable (io/file co-authors-file) true)))
 
 (comment
   (get-co-authors)

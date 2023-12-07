@@ -2,6 +2,7 @@
   (:require [athosone.gitlab.pair :as gitlab]
             [cli-matic.core :refer [run-cmd]])
   (:gen-class))
+
 ;; https://github.com/l3nz/cli-matic
 (def CONFIGURATION
   {:command "toolbox"
@@ -11,12 +12,13 @@
                   :description "Gitlab CLI"
                   :version "0.1.0"
                   :opts [{:as "Gitlab personal token"
-                          ;; Default from env var
-                          :default "toto";;(System/getenv "GITLAB_PERSONAL_ACCESS_TOKEN")
+                          :description "Can also be set in env var GITLAB_PERSONAL_ACCESS_TOKEN"
+                          :default (System/getenv "GITLAB_PERSONAL_ACCESS_TOKEN")
                           :type :string
                           :option "token"
                           :short "t"}
                          {:as "Gitlab API URL"
+                          :description "Can also be set in env var GITLAB_URL, defaults to https://gitlab.com/api/v4"
                           :default "https://gitlab.com/api/v4"
                           :type :string
                           :option "url"}]
@@ -29,7 +31,8 @@
                                          :short "u"}]
                                  :runs gitlab/pair}]}]})
 
-
+;; TODO: improve config:
+;; https://grishaev.me/en/clj-book-config/
 (defn -main
   [& args]
   ;; (println (str "Hello " args))

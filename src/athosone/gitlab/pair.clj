@@ -5,12 +5,19 @@
             [clojure.string :as str]
             [clojure.pprint :as pp]))
 
-(def config (edn/read-string (slurp  "./config.edn")))
+;; (def config (edn/read-string (slurp  "./config.edn")))
 
-(def base-url (:GITLAB_URL config))
+(def base-url nil)
+(def access-token nil)
+
 (def search-endpoint "/users?search=")
+(defn set-base-url!
+  [base-url]
+  (alter-var-root (var base-url) (constantly base-url)))
 
-(def access-token (:GITLAB_PERSONAL_ACCESS_TOKEN config))
+(defn set-access-token!
+  [access-token]
+  (alter-var-root (var access-token) (constantly access-token)))
 
 (defn search-user [user]
   (let [response (client/get (str base-url search-endpoint user)
@@ -58,6 +65,8 @@
 (defn pair [{:keys [token url users]}]
   (when (empty? users)
     (throw (ex-info "No users provided" {})))
+  (set-base-url! url)
+  (set-access-token! token)
   (let [users (str/split users #",")]
     (gitconfig/replace-co-authors (vec (map #(refine-user %1) users)))))
 
