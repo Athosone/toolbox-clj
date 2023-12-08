@@ -3,8 +3,6 @@
    [clojure.java.io :as io]
    [clojure.string :as s]))
 
-(:import java.io.File)
-
 (def co-authors-file ".git/co-authors.txt")
 (def prepare-commit-msg-file ".git/hooks/prepare-commit-msg")
 (def resource-preparemsg-script "prepare-commit-msg.sh")

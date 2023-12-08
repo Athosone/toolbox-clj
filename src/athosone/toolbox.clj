@@ -21,6 +21,7 @@
                          {:as "Gitlab API URL, can also be set in env var GITLAB_URL, defaults to https://gitlab.michelin.com/api/v4"
                           :default "https://gitlab.michelin.com/api/v4"
                           :type :string
+                          :env "GITLAB_URL"
                           :option "url"}]
                   :subcommands [{:command "pair"
                                  :description "Pair with a gitlab user, will add as Co-Author to commits"
