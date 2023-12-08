@@ -35,7 +35,7 @@
 
 (comment
   (get-co-authors)
-  (replace-co-authors ["aaa", "toaaao"])
+  (replace-co-authors ["athosone"])
   (slurp co-authors-file)
   (generate-co-authors "")
   (slurp (io/resource resource-preparemsg-script))
