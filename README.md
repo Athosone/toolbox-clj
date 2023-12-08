@@ -1,5 +1,8 @@
 # clj-cli
 
+https://github.com/tonsky/uberdeps
+<https://medium.com/graalvm/babashka-how-graalvm-helped-create-a-fast-starting-scripting-environment-for-clojure-b0fcc38b0746>
+
 To run the app:
 
 ```bash
@@ -7,19 +10,20 @@ clojure -m athosone.toolbox gitlab pair -u athosone
 ```
 
 FIXME: my new application.
+
 ## UI Ideas
 
-https://clojurebridgelondon.github.io/workshop/introducing-clojure/rich-terminals.html
+<https://clojurebridgelondon.github.io/workshop/introducing-clojure/rich-terminals.html>
 
-https://multimud.github.io/clojure-lanterna/4-reference
+<https://multimud.github.io/clojure-lanterna/4-reference>
 
 Raw method using go:
 
-https://medium.com/@nexidian/writing-an-interactive-cli-menu-in-golang-d6438b175fb6
+<https://medium.com/@nexidian/writing-an-interactive-cli-menu-in-golang-d6438b175fb6>
 
 ## Installation
 
-Download from https://github.com/athosone/clj-cli
+Download from <https://github.com/athosone/clj-cli>
 
 ## Usage
 
@@ -47,11 +51,11 @@ Run the project, overriding the name to be greeted:
 
 Run the project's tests (they'll fail until you edit them):
 
-    $ clojure -T:build test
+    clojure -T:build test
 
 Run the project's CI pipeline and build an uberjar (this will fail until you edit the tests to pass):
 
-    $ clojure -T:build ci
+    clojure -T:build ci
 
 This will produce an updated `pom.xml` file with synchronized dependencies inside the `META-INF`
 directory inside `target/classes` and the uberjar in `target`. You can update the version (and SCM tag)
@@ -63,7 +67,7 @@ from `build.clj`.
 
 Run that uberjar:
 
-    $ java -jar target/clj-cli-0.1.0-SNAPSHOT.jar
+    java -jar target/clj-cli-0.1.0-SNAPSHOT.jar
 
 ## Options
 
@@ -78,7 +82,9 @@ FIXME: listing of options this app accepts.
 ...
 
 ### Any Other Sections
+
 ### That You Think
+
 ### Might be Useful
 
 ## License

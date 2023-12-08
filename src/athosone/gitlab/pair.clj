@@ -1,6 +1,5 @@
 (ns athosone.gitlab.pair
   (:require [clj-http.client :as client]
-            [clojure.edn :as edn]
             [athosone.git.gitconfig :as gitconfig]
             [clojure.string :as str]
             [clojure.pprint :as pp]))
@@ -36,6 +35,8 @@
   (def z (map (fn [[k v]] (hash-map :index k :user v)) y))  ;; (hash-map :index "1" :user user)) ["aaaa", "bbbb"]))
   (pp/print-table (sort-by :user z))
   ())
+
+
 (defn- print-users [users]
   ;; (let [formatted-users (map-indexed (fn [idx user] ({:index (str idx) :username user})) users)]
   ;; Create a map with index and username
@@ -61,7 +62,6 @@
     (prn "Select user:")
     (select-user potential-users)))
 
-;; TODO token and url globally
 (defn pair [{:keys [token url users]}]
   (when (empty? users)
     (throw (ex-info "No users provided" {})))

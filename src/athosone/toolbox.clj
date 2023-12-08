@@ -11,15 +11,15 @@
    :subcommands [{:command "gitlab"
                   :description "Gitlab CLI"
                   :version "0.1.0"
-                  :opts [{:as "Gitlab personal token"
-                          :description "Can also be set in env var GITLAB_PERSONAL_ACCESS_TOKEN"
-                          :default (System/getenv "GITLAB_PERSONAL_ACCESS_TOKEN")
+                  :opts [{:as "Gitlab personal token, can also be set in env var GITLAB_ACCESS_TOKEN"
+                          :default ""
+                          :present true
+                          :env "GITLAB_ACCESS_TOKEN"
                           :type :string
                           :option "token"
                           :short "t"}
-                         {:as "Gitlab API URL"
-                          :description "Can also be set in env var GITLAB_URL, defaults to https://gitlab.com/api/v4"
-                          :default "https://gitlab.com/api/v4"
+                         {:as "Gitlab API URL, can also be set in env var GITLAB_URL, defaults to https://gitlab.michelin.com/api/v4"
+                          :default "https://gitlab.michelin.com/api/v4"
                           :type :string
                           :option "url"}]
                   :subcommands [{:command "pair"
@@ -35,7 +35,6 @@
 ;; https://grishaev.me/en/clj-book-config/
 (defn -main
   [& args]
-  ;; (println (str "Hello " args))
   (run-cmd args CONFIGURATION))
 
 
