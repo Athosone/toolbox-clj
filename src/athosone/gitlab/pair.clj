@@ -4,7 +4,6 @@
             [clojure.string :as str]
             [clojure.pprint :as pp]))
 
-;; (def config (edn/read-string (slurp  "./config.edn")))
 
 (def base-url nil)
 (def access-token nil)
@@ -22,26 +21,11 @@
   (let [response (client/get (str base-url search-endpoint user)
                              {:headers {"Private-Token" access-token}
                               :as :json})]
-    (map #(:username %1) (:body response))))
-
-(comment
-  (print-users ["ccc", "aaaa", "bbbb"])
-  (pp/print-table (reduce into {} (map-indexed #(assoc {} %1 %2) ["aaaa", "bbbb"])))
-  (pp/print-table  (zipmap (iterate inc 1) ["aaaa", "bbbb"]))
-  (def y (zipmap (iterate inc 1) ["aaaa", "bbbb"]))
-  y
-  (def x (vec (map (fn [[k v]] (hash-map k v)) y)))
-  x
-  (def z (map (fn [[k v]] (hash-map :index k :user v)) y))  ;; (hash-map :index "1" :user user)) ["aaaa", "bbbb"]))
-  (pp/print-table (sort-by :user z))
-  ())
-
+    (map (fn [response] {:username (:username response) :name (:name response)}) (:body response))))
 
 (defn- print-users [users]
-  ;; (let [formatted-users (map-indexed (fn [idx user] ({:index (str idx) :username user})) users)]
-  ;; Create a map with index and username
   (let [indexed-map (zipmap (iterate inc 0) users)
-        formatted-users (map (fn [[k v]] (hash-map :index k :user v)) indexed-map)]
+        formatted-users (map (fn [[k v]] (hash-map :index k :user (:username v) :name (:name v))) indexed-map)]
     (pp/print-table formatted-users)))
 
 (defn- select-user [users]
@@ -52,10 +36,10 @@
       (throw (ex-info "Invalid user number" {}))
       (let [selected-user (nth users (Integer/parseInt user-idx))]
         (prn (str "Selected user: " selected-user))
-        selected-user))))
+        (:username selected-user)))))
 
 (defn refine-user [user]
-  (let [potential-users (sort (vec (take 5 (search-user user))))]
+  (let [potential-users (sort-by :name (vec (take 10 (search-user user))))]
     (when (empty? potential-users)
       (throw (ex-info (str "User " user " not found") {})))
     ; Ask for user selection
@@ -71,16 +55,13 @@
     (gitconfig/replace-co-authors (vec (map #(refine-user %1) users)))))
 
 (comment
-  (print-users ["aaa" "bbb"])
-  (select-user ["aaa" "bbb"])
-  (search-user "ayrton")
-  (pair "")
-  (pair "ayrton werck,michel")
-  (pair "werck")
-  (str/split "athosone,athosone2" #",")
-  (str/split "athosone2" #",")
-  (refine-user "athos,a")
-
+  (def config (edn/read-string (slurp  "./config.edn")))
+  (def base-url (get config :GITLAB_URL))
+  (def access-token (get config :GITLAB_PERSONAL_ACCESS_TOKEN))
+  (print-users [{:username "user" :name "toto"}, {:username "user2" :name "toto2"}])
+  (sort-by :name (vec (search-user "dubois")))
+  (map #(refine-user %1) ["Dubois"])
+  (refine-user "Dubois")
   ())
 
 ; TODO check for login gitlab interactively or even forgerock
